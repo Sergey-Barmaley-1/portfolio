@@ -1,5 +1,5 @@
 /* global styles and animation */
-
+@import "tailwindcss";
 /* === Fira Code === */
 @font-face {
   font-family: 'Fira Code';
