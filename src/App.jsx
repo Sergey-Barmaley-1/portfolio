@@ -6,10 +6,12 @@ import Contacts from "./pages/Contacts";
 import Projects from "./pages/Projects";
 import MainLayout from "./layouts/MainLayout";
 import "./App.css";
+import ScrollToTop from "./utils/ScrollToUp";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop></ScrollToTop>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />

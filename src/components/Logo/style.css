@@ -1,0 +1,27 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+
+@media (min-width: 600px) {
+  .logo-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-image {
+    width: 80px;
+    height: 80px;
+  }
+}

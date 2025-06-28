@@ -1,0 +1,21 @@
+/* styles.css */
+.navlink {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  transition: color 0.3s, background-color 0.3s, text-decoration-color 0.3s;
+  cursor: pointer;
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.navlink:hover {
+  text-decoration-color: var(--primary-hover);
+}
+
+.navlink-active {
+  color: var(--text-inverted);
+  background-color: var(--primary);
+  text-decoration-color: var(--primary-light);
+}
