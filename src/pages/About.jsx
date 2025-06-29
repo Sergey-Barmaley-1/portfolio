@@ -18,7 +18,7 @@ const About = () => {
         />
 
         <div className="flex-1">
-          <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-700 dark:text-gray-300">
+          <p className="text-lg md:text-xl mb-6 leading-relaxed text-[var(--text)]">
             Привет! Я Сергей, веб-разработчик, который создает современные, быстрые и удобные сайты.
             Моя цель — решать задачи бизнеса через качественный и продуманный UI/UX.
             Опыт работы с React, Node и современным стеком более 3 лет.
@@ -27,12 +27,12 @@ const About = () => {
           <h3 className="text-2xl font-semibold mb-4">Мои навыки</h3>
           <div className="flex flex-wrap gap-4">
             {skills.map((skill) => (
-              <span
-                key={skill}
-                className="px-4 py-2 bg-indigo-600 text-white rounded-full text-sm shadow hover:bg-indigo-700 transition"
-              >
-                {skill}
-              </span>
+<span
+  key={skill}
+  className="px-4 py-2 bg-[var(--primary)] text-[var(--text)] rounded-full text-sm shadow hover:bg-[var(--bg)] transition"
+>
+  {skill}
+</span>
             ))}
           </div>
         </div>

@@ -46,17 +46,17 @@ const Projects = () => {
       {/* Фильтры */}
       <div className="flex flex-wrap justify-center gap-4 mb-12">
         {allTags.map((tag) => (
-          <button
-            key={tag}
-            onClick={() => setSelectedTag(tag)}
-            className={`px-4 py-2 rounded-full border
-                        ${selectedTag === tag
-                          ? 'bg-indigo-600 text-white border-indigo-600'
-                          : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-700'}
-                        transition`}
-          >
-            {tag}
-          </button>
+<button
+  key={tag}
+  onClick={() => setSelectedTag(tag)}
+  className={`px-4 py-2 rounded-full border transition
+    ${selectedTag === tag
+      ? 'bg-[var(--primary)] text-[var(--surface)] border-[var(--primary)]'
+      : 'bg-[var(--surface)] text-[var(--text-muted)] border-[var(--border)] hover:bg-[var(--surface-hover)]'}
+  `}
+>
+  {tag}
+</button>
         ))}
       </div>
 
