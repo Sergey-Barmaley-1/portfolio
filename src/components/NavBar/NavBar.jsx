@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import links from './navLinks';
+import links from '../../MockData/navLinks';
 import './style.css';
 
 const NavBar = ({ className = "" }) => {
