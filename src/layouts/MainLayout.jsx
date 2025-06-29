@@ -4,6 +4,7 @@ import Logo from "../components/Logo/Logo";
 import ToggleThem from "../components/ToggleThem/ToggleThem";
 import MobileNavBar from "../components/NavBar/MobileNavBar";
 import Footer from "../pages/sections/Footer";
+import DevelopmentBanner from "../components/DevelopmentBanner";
 
 const MainLayout = () => {
   return (
@@ -21,6 +22,7 @@ const MainLayout = () => {
         <Outlet />
       </main>
 
+      <DevelopmentBanner></DevelopmentBanner>
       <Footer></Footer>
     </>
   );
